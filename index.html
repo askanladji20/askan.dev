@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Askan | Android & Java Developer</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-text">Askan</span>
+                <span class="logo-dot">.</span>
+            </a>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="./assets/Mohammad_Askan_Resume.pdf" download="Mohammad_Askan_Resume.pdf"
+                    class="btn btn-resume">
+                    <i class="fas fa-download"></i>
+                    <span>Resume</span>
+                </a>
+            </div>
+
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <div class="greeting">
+                    <span class="wave">👋</span>
+                    <span>Hello, I'm</span>
+                </div>
+                <h1 class="hero-title">
+                    Mohammad Askan
+                    <span class="highlight">Riyaz Ahmed Ladji</span>
+                </h1>
+                <div class="typing-container">
+                    <span class="static-text">I'm a </span>
+                    <span class="typed-text" id="typedText"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Android & Java Developer with expertise in building scalable applications,
+                    SDKs, and enterprise-grade solutions using Kotlin, Java, and Jetpack Compose.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Hire Me
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <i class="fas fa-folder-open"></i>
+                        View Projects
+                    </a>
+                    <a href="./assets/Mohammad_Askan_Resume.pdf" download="Mohammad_Askan_Resume.pdf"
+                        class="btn btn-resume-hero">
+                        <i class="fas fa-file-pdf"></i>
+                        Download CV
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:askanladji20@gmail.com" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="tel:8208901884" class="social-link" title="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+                <div class="image-wrapper">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="floating-icons">
+                            <div class="float-icon icon-1"><i class="fab fa-android"></i></div>
+                            <div class="float-icon icon-2"><i class="fab fa-java"></i></div>
+                            <div class="float-icon icon-3"><i class="fas fa-mobile-alt"></i></div>
+                            <div class="float-icon icon-4"><i class="fas fa-database"></i></div>
+                            <div class="float-icon icon-5"><i class="fab fa-git-alt"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Get To Know</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right" data-aos-duration="800">
+                    <div class="image-card">
+                        <div class="card-inner">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="experience-badge">
+                            <span class="number">2+</span>
+                            <span class="text">Years<br>Experience</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-info" data-aos="fade-left" data-aos-duration="800">
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <i class="fas fa-briefcase"></i>
+                            <h3>Experience</h3>
+                            <p>2+ Years Working</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-project-diagram"></i>
+                            <h3>Projects</h3>
+                            <p>10+ Completed</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-trophy"></i>
+                            <h3>Achievements</h3>
+                            <p>Hackathon Winner</p>
+                        </div>
+                    </div>
+
+                    <p class="about-text">
+                        Android & Java Developer with hands-on experience in designing, developing,
+                        and maintaining scalable Android applications and Java-based business logic systems.
+                        Strong expertise in Core Java, OOP concepts, REST API integration, multithreading
+                        fundamentals, and Android SDK development using Kotlin and Java.
+                    </p>
+                    <p class="about-text">
+                        Proven experience working on enterprise-grade transaction systems, SDKs, CRM applications,
+                        and device-level integrations. Adept at clean architecture, performance optimization,
+                        secure data handling, and agile development practices.
+                    </p>
+
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Pune, India</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>B.E. in Computer Engineering</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>askanladji20@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-comments"></i>
+                        Let's Talk
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">What I Know</span>
+                <h2 class="section-title">My Skills</h2>
+            </div>
+
+            <div class="skills-content">
+                <!-- Programming Languages -->
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Programming Languages
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon java">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon kotlin">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <span class="skill-name">Kotlin</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon dart">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <span class="skill-name">Dart</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon sql">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Java Expertise - NEW SECTION -->
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="150">
+                    <h3 class="category-title">
+                        <i class="fab fa-java"></i>
+                        Java Expertise
+                    </h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Core Java</span>
+                        <span class="tech-tag">OOP Concepts</span>
+                        <span class="tech-tag">Collections Framework</span>
+                        <span class="tech-tag">Exception Handling</span>
+                        <span class="tech-tag">Multithreading</span>
+                        <span class="tech-tag">Generics</span>
+                        <span class="tech-tag">Lambda Expressions</span>
+                        <span class="tech-tag">Stream API</span>
+                        <span class="tech-tag">Design Patterns</span>
+                        <span class="tech-tag">JDBC</span>
+                        <span class="tech-tag">REST APIs</span>
+                        <span class="tech-tag">Maven/Gradle</span>
+                    </div>
+                </div>
+
+                <!-- Android Development -->
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="category-title">
+                        <i class="fab fa-android"></i>
+                        Android Development
+                    </h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Jetpack Compose</span>
+                        <span class="tech-tag">Android SDK</span>
+                        <span class="tech-tag">MVVM</span>
+                        <span class="tech-tag">Clean Architecture</span>
+                        <span class="tech-tag">Room DB</span>
+                        <span class="tech-tag">Retrofit</span>
+                        <span class="tech-tag">Hilt/Dagger</span>
+                        <span class="tech-tag">Coroutines</span>
+                        <span class="tech-tag">LiveData</span>
+                        <span class="tech-tag">ViewModel</span>
+                        <span class="tech-tag">Navigation Component</span>
+                        <span class="tech-tag">WorkManager</span>
+                        <span class="tech-tag">Material Design</span>
+                        <span class="tech-tag">Custom Views</span>
+                        <span class="tech-tag">SDK Development</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Technologies -->
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Tools & Technologies
+                    </h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Android Studio</span>
+                        <span class="tech-tag">IntelliJ IDEA</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">GitHub</span>
+                        <span class="tech-tag">Bitbucket</span>
+                        <span class="tech-tag">Gradle</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">REST APIs</span>
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Adobe XD</span>
+                        <span class="tech-tag">ADB</span>
+                        <span class="tech-tag">CI/CD</span>
+                        <span class="tech-tag">Postman</span>
+                        <span class="tech-tag">JIRA</span>
+                    </div>
+                </div>
+
+                <!-- Database & Backend -->
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="category-title">
+                        <i class="fas fa-server"></i>
+                        Database & Backend
+                    </h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">Room</span>
+                        <span class="tech-tag">Firebase Realtime DB</span>
+                        <span class="tech-tag">Firestore</span>
+                        <span class="tech-tag">SharedPreferences</span>
+                        <span class="tech-tag">DataStore</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">My Journey</span>
+                <h2 class="section-title">Work Experience</h2>
+            </div>
+
+            <div class="timeline">
+                <!-- Current Job -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div class="timeline-date">
+                                <i class="fas fa-calendar"></i>
+                                03/2025 - Present
+                            </div>
+                            <span class="timeline-badge current">Current</span>
+                        </div>
+                        <h3 class="timeline-title">Android Developer</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            Nstore Retech Pvt. Ltd. | Thane, India
+                        </h4>
+                        <ul class="timeline-list">
+                            <li>Developed and maintained core banking and CRM Android apps using Kotlin, XML, and
+                                Jetpack Compose</li>
+                            <li>Migrated legacy Windows CRM modules to Android, building new UI and backend components
+                            </li>
+                            <li>Created Android SDKs for partner integrations and device control functions</li>
+                            <li>Worked on MDM (Mobile Device Management) system for enterprise-level Android control
+                            </li>
+                            <li>Implemented API integrations, Room DB, and data synchronization using clean MVVM
+                                architecture</li>
+                            <li>Collaborated in agile teams with Git versioning, CI/CD, and code reviews</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Kotlin</span>
+                            <span>Jetpack Compose</span>
+                            <span>MVVM</span>
+                            <span>Room DB</span>
+                            <span>SDK</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Previous Job -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div class="timeline-date">
+                                <i class="fas fa-calendar"></i>
+                                06/2024 - 03/2025
+                            </div>
+                        </div>
+                        <h3 class="timeline-title">Executive (Java Developer)</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            AGS Transact Technologies | Navi Mumbai
+                        </h4>
+                        <ul class="timeline-list">
+                            <li>Developed custom Android modules integrated into internal transaction and automation
+                                systems</li>
+                            <li>Built and consumed REST APIs, optimized app performance, and managed business logic in
+                                Java</li>
+                            <li>Created UI flows, fragments, and services aligned with Android best practices</li>
+                            <li>Enhanced debugging, crash reporting, and performance profiling across multiple app
+                                modules</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Java</span>
+                            <span>REST API</span>
+                            <span>Android</span>
+                            <span>Transaction Systems</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Internship -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div class="timeline-date">
+                                <i class="fas fa-calendar"></i>
+                                09/2023 - 11/2023
+                            </div>
+                        </div>
+                        <h3 class="timeline-title">Software Developer Intern</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            AGS Transact Technologies | Navi Mumbai
+                        </h4>
+                        <ul class="timeline-list">
+                            <li>Developed cross-platform applications using Flutter (Dart) with backend integration</li>
+                            <li>Worked on Java-based Android modules during Android-to-Flutter migration</li>
+                            <li>Assisted in implementing authentication, Firebase integration, and real-time data sync
+                            </li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="section-header" data-aos="fade-up" style="margin-top: 80px;">
+                <span class="section-subtitle">Learning Path</span>
+                <h2 class="section-title">Education</h2>
+            </div>
+
+            <div class="education-grid">
+                <div class="education-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>B.E. in Computer Engineering</h3>
+                    <h4>Watumull Institute of Electronic Engineering</h4>
+                    <span class="education-date">12/2021 - 05/2024 | Mumbai</span>
+                    <p>Specialized in software engineering principles, advanced algorithms, and system design
+                        methodologies.</p>
+                </div>
+
+                <div class="education-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="education-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Diploma in Computer Engineering</h3>
+                    <h4>VPM's Polytechnic</h4>
+                    <span class="education-date">05/2018 - 06/2021 | Thane</span>
+                    <p>Developed a strong foundation in programming, database systems, and application development.</p>
+                </div>
+            </div>
+
+            <!-- Certificates -->
+            <div class="section-header" data-aos="fade-up" style="margin-top: 80px;">
+                <span class="section-subtitle">Certifications</span>
+                <h2 class="section-title">Certificates</h2>
+            </div>
+
+            <div class="certificates-grid">
+                <div class="certificate-card glass-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="certificate-icon">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <h3>Android Development</h3>
+                    <span class="certificate-issuer">Udemy</span>
+                    <p>Mastered app design, Kotlin, Jetpack, and API integration</p>
+                </div>
+
+                <div class="certificate-card glass-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="certificate-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>SQL for Data Analytics</h3>
+                    <span class="certificate-issuer">Online Course</span>
+                    <p>Specialized in advanced SQL query development and analytics</p>
+                </div>
+
+                <div class="certificate-card glass-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="certificate-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3>Full Stack Java</h3>
+                    <span class="certificate-issuer">Apna College</span>
+                    <p>Mastered complex Java functionalities</p>
+                </div>
+
+                <div class="certificate-card glass-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="certificate-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Advanced Python</h3>
+                    <span class="certificate-issuer">Udemy</span>
+                    <p>Mastered Python for automation and data analysis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Comico: Comic Book App</h3>
+                        <p class="project-description">
+                            Designed an app to purchase, read, and stream comics with advanced caching
+                            and multimedia integration. Built with Kotlin, Jetpack Compose, and REST API
+                            integration for dynamic content loading.
+                        </p>
+                        <div class="project-tags">
+                            <span>Kotlin</span>
+                            <span>Jetpack Compose</span>
+                            <span>REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image project-image-2">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Mental Health Assessment Tool</h3>
+                        <p class="project-description">
+                            Developed a cutting-edge AI-based platform utilizing advanced GNN and CNN models
+                            to assess mental health via image uploads. Achieved high accuracy in evaluations
+                            with intuitive user interface.
+                        </p>
+                        <div class="project-tags">
+                            <span>AI/ML</span>
+                            <span>Python</span>
+                            <span>CNN</span>
+                            <span>GNN</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image project-image-3">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Expense Splitter App</h3>
+                        <p class="project-description">
+                            Designed real-time expense sharing app with Firebase and state management.
+                            Built using Flutter, Dart, Provider for efficient group expense tracking
+                            and splitting.
+                        </p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Firebase</span>
+                            <span>Provider</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Recognition</span>
+                <h2 class="section-title">Achievements</h2>
+            </div>
+
+            <div class="achievements-grid">
+                <div class="achievement-card glass-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Smart India Hackathon 2023</h3>
+                    <p>Represented institute with a recognized high-impact Android project</p>
+                </div>
+
+                <div class="achievement-card glass-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="achievement-icon winner">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>CodeVengers Hackathon Winner</h3>
+                    <p>Led Android team to victory under strict timelines</p>
+                </div>
+
+                <div class="achievement-card glass-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>AGS Recognition</h3>
+                    <p>Recognized for developing reusable SDK modules improving development speed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>askanladji20@gmail.com</p>
+                        <a href="mailto:askanladji20@gmail.com">Send a message</a>
+                    </div>
+
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>+91 8208901884</p>
+                        <a href="tel:8208901884">Call me</a>
+                    </div>
+
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>Pune, India</p>
+                        <a href="https://maps.google.com" target="_blank">View on map</a>
+                    </div>
+                </div>
+
+                <form class="contact-form glass-card" data-aos="fade-left" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder=" " required>
+                        <label for="name">Your Name</label>
+                        <i class="fas fa-user"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">Your Email</label>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder=" " required>
+                        <label for="subject">Subject</label>
+                        <i class="fas fa-tag"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                        <label for="message">Your Message</label>
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Askan</span>
+                    <span class="logo-dot">.</span>
+                </div>
+                <p class="footer-text">
+                    Building exceptional Android experiences with passion and precision.
+                </p>
+                <div class="footer-social">
+                    <a href="mailto:askanladji20@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mohammad Askan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container" id="chatbot">
+        <button class="chatbot-toggle" id="chatbotToggle">
+            <i class="fas fa-robot"></i>
+            <span class="pulse"></span>
+        </button>
+
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <div class="chatbot-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="chatbot-info">
+                    <h4>Askan's Assistant</h4>
+                    <span class="status">Online</span>
+                </div>
+                <button class="chatbot-close" id="chatbotClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>👋 Hello! I'm Askan's virtual assistant. Ask me anything about his skills, experience, or
+                            projects!</p>
+                    </div>
+                </div>
+                <div class="quick-replies">
+                    <button class="quick-reply" data-message="What are your skills?">Skills</button>
+                    <button class="quick-reply" data-message="Tell me about Java expertise">Java</button>
+                    <button class="quick-reply" data-message="Tell me about Android development">Android</button>
+                    <button class="quick-reply" data-message="Tell me about your experience">Experience</button>
+                    <button class="quick-reply" data-message="Show me your projects">Projects</button>
+                    <button class="quick-reply" data-message="How can I contact you?">Contact</button>
+                </div>
+            </div>
+
+            <div class="chatbot-input">
+                <input type="text" id="chatInput" placeholder="Type your message...">
+                <button id="sendMessage">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
